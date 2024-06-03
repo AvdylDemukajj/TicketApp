@@ -1,0 +1,28 @@
+# Direktoria node_modules përjashtohet për të shmangur ruajtjen e bibliotekave të instalimit
+node_modules/
+
+# Log skedarët përjashtohen për të mbajtur repo pastër nga informacionet e tepruara
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Përjashtimi i skedarëve të prodhimit
+dist/
+build/
+
+# Përjashtimi i konfigurimeve lokale të IDE-së dhe editorëve
+.vscode/
+.idea/
+
+# Përjashtimi i skedarëve të environmentit
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Përjashtimi i cache skedarëve dhe direktoritëve të tjerë të gjeneruar
+.DS_Store
+.cache/
+tmp/
+coverage/
