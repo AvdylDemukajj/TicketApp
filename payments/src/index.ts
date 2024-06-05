@@ -9,9 +9,9 @@ const start = async () => {
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
   }
-  // if (!process.env.MONGO_URI) {
-  //   throw new Error('MONGO_URI must be defined');
-  // }
+  if (!process.env.MONGO_URI) {
+    throw new Error('MONGO_URI must be defined');
+  }
   // if (!process.env.NATS_CLIENT_ID) {
   //   throw new Error('NATS_CLIENT_ID must be defined');
   // }
@@ -34,8 +34,8 @@ const start = async () => {
     // });
     // process.on('SIGINT', () => natsWrapper.client.close());
     // process.on('SIGTERM', () => natsWrapper.client.close());
-    // await mongoose.connect(process.env.MONGO_URI);
-    // console.log('Connected to MongoDb');
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log('Connected to MongoDb');
     // new OrderCreatedListener(natsWrapper.client).listen();
     // new OrderCancelledListener(natsWrapper.client).listen();
   } catch (err) {
