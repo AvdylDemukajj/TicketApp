@@ -16,8 +16,40 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
+    - image: lumidemukaj/ticketing-client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '**/*.js'
+            dest: .
     - image: lumidemukaj/tickets
       context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+    - image: lumidemukaj/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+    - image: lumidemukaj/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+    - image: lumidemukaj/payments
+      context: payments
       docker:
         dockerfile: Dockerfile
       sync:

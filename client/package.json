@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.2.1",
+    "@coreui/react": "^5.1.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.19",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^13.4.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-stripe-checkout": "^2.6.3",
+    "socket.io-client": "^4.7.5",
+    "tailwindcss": "^3.4.3"
+  }
+}
